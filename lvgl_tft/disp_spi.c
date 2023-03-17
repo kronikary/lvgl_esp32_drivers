@@ -91,7 +91,7 @@ static void IRAM_ATTR spi_ready (spi_transaction_t *trans);
  *  STATIC VARIABLES
  **********************/
 static spi_host_device_t spi_host;
-static spi_device_handle_t spi;
+spi_device_handle_t spi;
 static QueueHandle_t TransactionPool = NULL;
 static transaction_cb_t chained_post_cb;
 

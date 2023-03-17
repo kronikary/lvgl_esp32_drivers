@@ -51,6 +51,7 @@ void disp_spi_add_device_config(spi_host_device_t host, spi_device_interface_con
 void disp_spi_add_device_with_speed(spi_host_device_t host, int clock_speed_hz);
 void disp_spi_change_device_speed(int clock_speed_hz);
 void disp_spi_remove_device();
+extern spi_device_handle_t spi;
 
 /*	Important! 
 	All buffers should also be 32-bit aligned and DMA capable to prevent extra allocations and copying.
